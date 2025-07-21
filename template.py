@@ -11,7 +11,7 @@ list_of_files = [
     "data/.gitkeep",
     f"{project_name}/__init__.py",
     f"{project_name}/components/__init__.py",
-    f"{project_name}/components/data_ingesion.py",
+    f"{project_name}/components/data_ingestion.py",
     f"{project_name}/components/data_validation.py",
     f"{project_name}/components/model_trainer.py",
     f"{project_name}/constant/__init__.py",

@@ -176,3 +176,4 @@ cython_debug/
 
 #datasets
 data/Macro-Evolution-Segmentation-6/
+artifacts/
