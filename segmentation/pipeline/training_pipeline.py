@@ -1,3 +1,7 @@
+'''
+This is the orchestration layer of our modular design. The TrainPipeline class defined here executes the pipeline components in
+the correct order.
+'''
 import sys
 from segmentation.logger import logging
 from segmentation.exception import AppException

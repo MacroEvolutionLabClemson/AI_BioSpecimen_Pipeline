@@ -1,3 +1,7 @@
+'''
+This is the actual data ingestion component. That is, this is where the actual data ingestion logic lives. The data ingestion 
+component downloads and extracts a dataset from Roboflow's raw link and prepares it for downstream pipeline components.
+'''
 import os
 import sys
 import zipfile
@@ -8,6 +12,7 @@ from segmentation.entity.config_entity import DataIngestionConfig
 from segmentation.entity.artifacts_entity import DataIngestionArtifact
 
 class DataIngestion:
+    #This DataIngestion class (component) will be instantiated in your pipeline.
     def __init__(self, data_ingestion_config: DataIngestionConfig = DataIngestionConfig()):
         try:
             self.data_ingestion_config = data_ingestion_config
