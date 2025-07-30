@@ -20,3 +20,10 @@ class DataValidationArtifact:
     #means the artifacts/data_ingestion/feature_store has all the files required for training purpose
     
     validation_status:bool
+
+@dataclass
+class ModelTrainerArtifact:
+    '''
+    Output of the model trainer process: Path where the trained model is saved: artifact/model_trainer/best.pt
+    '''
+    trained_model_file_path: str 

@@ -8,7 +8,7 @@ DATA_INGESTION_DIR_NAME: str = "data_ingestion"         #A string constant that 
 
 DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"     #A string constant that specifies the subdirectory ("feature_store") inside the data ingestion sub-directory where the  dataset files will be unzipped and stored.
 
-DATA_DOWNLOAD_URL: str = "ENTER RAW DATASET URL FROM ROBOFLOW HERE"
+DATA_DOWNLOAD_URL: str = "ENTER RAW DATASET URL"
 
 
 
@@ -22,3 +22,12 @@ DATA_VALIDATION_STATUS_FILE = 'status.txt'                 #A string constant th
 
 DATA_VALIDATION_ALL_REQUIRED_FILES = ["train", "valid", "test", "data.yaml"]        #These are the list of files that need to be present in our unzipped dataset. If these are present, data_validation component returns a True, and we can move ahead with model training.
 
+'''
+Here, we mention the 'constant variables' related or used in the model_trainer component and also throughout the project
+'''
+
+MODEL_TRAINER_DIR_NAME: str = "model_trainer"
+
+MODEL_TRAINER_PRETRAINED_WEIGHT_NAME: str = "yolov8s-seg.pt"
+
+MODEL_TRAINER_NO_EPOCHS: int = 50
